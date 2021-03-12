@@ -1,0 +1,30 @@
+body{
+  justify-content: center;
+  text-align: center;
+  
+}
+#app>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items: center;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.item h2 {
+    margin: 0;
+    font: 30px sans-serif;
+    text-align: center;
+}
