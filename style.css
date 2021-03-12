@@ -1,7 +1,7 @@
 body{
   justify-content: center;
   text-align: center;
-  
+  background-color: #fafaf7;
 }
 #app>div {
     display: flex;
@@ -13,18 +13,25 @@ body{
 
 .item {
     width: 200px;
-    height: 200px;
+    height: 300px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
     margin: 2rem;
+    background-color: #faf0e6;
+    font: 20px "Comic Sans MS";
+
+}
+
+.item:hover {
+  transition: 0.5s;
+    background-color: #fae6e6;
 }
 
 .item h2 {
-    margin: 0;
     font: 30px sans-serif;
     text-align: center;
 }

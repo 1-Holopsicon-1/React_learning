@@ -24,23 +24,24 @@
       }
       render() {
         return (
-          <div className="card">
-          <h2 className="cardTitle">{ this.props.name }</h2>
+          <div className="card" class= "item" style={{backgroundColor: this.props.bg}}>
+            <h2 className="cardTitle">{ this.props.name }</h2>
             <img className="cardImg" src={ this.props.icon } alt="" />
-            <p className="cardTemp">{ this.props.temp }°С</p>
+            <p className="cardTemp">{ this.props.temp }℃</p>
             <p className="cardChance">{ this.props.chance }%</p>
           </div>
         )
       }
     }
     ReactDOM.render(
-      <div class="item">
+      <div>
         {
           cards.map(card => <Weather_constr
             name={card.name}
             icon={card.icon}
             temp={card.temp}
             chance={card.chance}
+            bg={card.color}
           />)
         }
       </div>,
